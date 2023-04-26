@@ -22,5 +22,9 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "config": "^3.3.9",
+    "telegraf": "^4.12.2"
   }
 }
