@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+.idea
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -159,3 +160,4 @@ $RECYCLE.BIN/
 .pnp.*
 /config/default.json
 /.idea/workspace.xml
+/config/production.json
