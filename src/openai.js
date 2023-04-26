@@ -6,7 +6,7 @@ class OpenAI {
     roles = {
         ASSISTANT: 'assistant',
         USER: 'user',
-        SYSTEM: 'system',
+        SYSTEM: 'system', // можем задать контекст например 'Ты адвокат дьявола, использующий в речи только метафоры'
     }
     constructor(apiKey) {
         const configuration = new Configuration({
@@ -22,7 +22,7 @@ class OpenAI {
             })
             return response.data.choices[0].message
         } catch (e) {
-            console.log('Error while Gpr chat',  e.message)
+            console.log('Error while Gpt chat',  e.message)
         }
     }
 
