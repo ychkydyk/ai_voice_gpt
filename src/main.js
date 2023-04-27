@@ -15,12 +15,12 @@ bot.use(session())
 
 bot.command('new', async (ctx) => {
     ctx.session = INITIAL_SESSION
-    await ctx.reply('Вы можете задать вопрос как текстом так и голосом...')
+    await ctx.reply('Вы можете задать вопрос как текстом так и голосом... /new - сбросить историю диалога')
 })
 
 bot.command('start', async (ctx) => {
     ctx.session = INITIAL_SESSION
-    await ctx.reply('Вы можете задать вопрос как текстом так и голосом...')
+    await ctx.reply('Вы можете задать вопрос как текстом так и голосом... /new - сбросить историю диалога')
 })
 
 bot.on(message('voice'), async (ctx) => {
